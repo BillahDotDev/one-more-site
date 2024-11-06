@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Business Informative Website" />
+        <meta name="keywords" content="business, shop, gallery, contact" />
+        <meta name="author" content="Your Business Name" />
+        <title>Business Informative Site</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <!-- Header with Navbar -->
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <h1>BusinessName</h1>
+                </div>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="#about-us">About Us</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#shop">Shop</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h2>Welcome to BusinessName</h2>
+                <p>
+                    Your one-stop destination for high-quality products and
+                    services.
+                </p>
+                <a href="#shop" class="btn-primary">Shop Now</a>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about-us" class="section">
+            <div class="container">
+                <h2 class="section-title">About Us</h2>
+                <p>
+                    At BusinessName, we are committed to providing top-tier
+                    products and exceptional customer service. Our team works
+                    tirelessly to ensure that each client experiences the
+                    highest level of satisfaction.
+                </p>
+                <p>
+                    Founded in 2020, we have quickly become a trusted name in
+                    the industry. Our business philosophy is centered on
+                    quality, reliability, and customer focus.
+                </p>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="section">
+            <div class="container">
+                <h2 class="section-title">Gallery</h2>
+                <div class="gallery-slider">
+                    <div class="slide">
+                        <img
+                            src="https://via.placeholder.com/800x400"
+                            alt="Image 1"
+                        />
+                    </div>
+                    <div class="slide">
+                        <img
+                            src="https://via.placeholder.com/800x400"
+                            alt="Image 2"
+                        />
+                    </div>
+                    <div class="slide">
+                        <img
+                            src="https://via.placeholder.com/800x400"
+                            alt="Image 3"
+                        />
+                    </div>
+                </div>
+                <div class="gallery-controls">
+                    <button id="prev" class="btn-primary">Previous</button>
+                    <button id="next" class="btn-primary">Next</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Shop Section -->
+        <section id="shop" class="section">
+            <div class="container">
+                <h2 class="section-title">Shop</h2>
+                <div class="shop-cards">
+                    <div class="shop-card">
+                        <img
+                            src="https://via.placeholder.com/300x200"
+                            alt="Product 1"
+                        />
+                        <h3>Product 1</h3>
+                        <p>High-quality product designed to meet your needs.</p>
+                        <button class="btn-primary">Buy Now</button>
+                    </div>
+                    <div class="shop-card">
+                        <img
+                            src="https://via.placeholder.com/300x200"
+                            alt="Product 2"
+                        />
+                        <h3>Product 2</h3>
+                        <p>
+                            Innovative and reliable product for your business.
+                        </p>
+                        <button class="btn-primary">Buy Now</button>
+                    </div>
+                    <div class="shop-card">
+                        <img
+                            src="https://via.placeholder.com/300x200"
+                            alt="Product 3"
+                        />
+                        <h3>Product 3</h3>
+                        <p>Durable and affordable product for everyday use.</p>
+                        <button class="btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Contact Us</h2>
+                <form id="contact-form" onsubmit="submitForm(event)">
+                    <label for="name">Name:</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Your Name"
+                        required
+                    />
+
+                    <label for="email">Email:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Your Email"
+                        required
+                    />
+
+                    <label for="message">Message:</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        placeholder="Your Message"
+                        required
+                    ></textarea>
+
+                    <button type="submit" class="btn-primary">
+                        Send Message
+                    </button>
+                </form>
+                <p id="form-response"></p>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer>
+            <div class="container">
+                <p>&copy; 2024 BusinessName. All Rights Reserved.</p>
+                <div class="social-links">
+                    <a href="#" target="_blank">Facebook</a>
+                    <a href="#" target="_blank">Instagram</a>
+                    <a href="#" target="_blank">Twitter</a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="scripts.js"></script>
+    </body>
+</html>
